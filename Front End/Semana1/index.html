@@ -1,40 +1,86 @@
-<!DOCTYPE html> <!-- Indica que es la versión html 5 -->
-<html lang="en"> <!-- Contenedor del html -->
-<head> <!-- Cabecera -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Title</title> <!-- Titulo de la pestaña de la página web -->
+<!--    Etiqueta de responce-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body > * {
-        border: solid 3px green;
-    }
-</style>
-<body> <!-- Contenido -->
-    <h1>Hola Mundo</h1>
-    <!-- Etiqueta de imagen (No tiene etiqueta de cierre-->
-    <img src="https://codigo.edu.pe/wp-content/uploads/2023/06/637513271472380d248ff3db_DESARROLLO-DE-VIDEOJUEGOS-p-1600.jpg"
-         alt="img" width="500" height="400">
-    <br/>
+<body>
+<!--    Menú de navegación  -->
+    <header>
+<!--        Navegación  -->
+        <nav class="menu">
+<!--            Logo - Navegación-->
+            <div>
+                <img src="logo.svg" alt="Logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="http://">Home</a>
+                </li>
+                <li>
+                    <a href="http://">About me</a>
+                </li>
+                <li>
+                    <a href="http://">Services</a>
+                </li>
+                <li>
+                    <a href="http://">Projects</a>
+                </li>
+                <li>
+                    <a href="http://">Testimonials</a>
+                </li>
+                <li>
+                    <a href="http://">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!--    Sección principal   -->
+    <main>
+        <section class="container">
+            <p class="gretting">Hi I am</p>
+            <p class="full-name">Linder Hassinger</p>
+            <h1 class="title">Senior Software Developer</h1>
+            <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro
+                tempore, hic ipsum dignissimos inventore iusto similique fugiat vel
+                maiores. Eos dignissimos placeat incidunt obcaecati nesciunt unde
+                iusto commodi fuga?
+            </p>
+            <button class="btn-primary">Hire me</button>
+        </section>
+        <section>
+            <div class="profile">
+                <img
+                src="retos/foto_perfil.jpg"
+                alt="Foto de Perfil Linder Hassinger"
+                />
+            </div>
+            <div class="social-media">
+                <a href="#">
+                <img src="facebook.svg" alt="" width="32" />
+                </a>
+                <a href="#">
+                <img src="twitter.svg" alt="" width="32" />
+                </a>
+                <a href="#">
+                <img src="instagram.svg" alt="" width="32" />
+                </a>
+                <a href="#">
+                <img src="linkedin.svg" alt="" width="32" />
+                </a>
+            </div>
+        </section>
+    </main>
+<!--    Pie de pagina   -->
+    <footer>
 
-    <!-- Etiqueta anchor (enlaces) -->
-    <a href="https://tecsup.webex.com/tecsup/ldr.php?RCID=722e2cfb0be8017e21831434cb3855c5" target="_blank">Clase 1</a>
-    <!-- El taget _blank hace que el link se abra en otra pestaña -->
-    <span>Contraseña: iKE22dJG</span>
-
-    <!-- Listas -->
-
-    <!-- Lista ordenada -->
-    <ol>
-        <li>Casa</li>
-        <li>Perro</li>
-        <li>Casa</li>
-    </ol>
-
-    <!-- Lista no ordenada -->
-    <ul>
-        <li>Fresa</li>
-        <li>Pera</li>
-        <li>Manzana</li>
-    </ul>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!--    Tipo de letra de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<!--    Estilo personalizado-->
+    <link rel="stylesheet" href="reto-3.css">
+</head>
+<body>
+    <header>
+        <nav class="container-width">
+<!--            logo -->
+            <div>
+                <img src="./images/logo.svg" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Corrers</a>
+                </li>
+                <li>
+                    <a href="">Events</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="">Support</a>
+                </li>
+            </ul>
+<!--            Menu -->
+            <div class="container-btn-burguer">
+                <button id="btn-menu-burger" class="menu-burger">
+                    <img src="./images/icon-hamburger.svg" alt="Menu">
+                </button>
+            </div>
+<!--            Lista -->
+            <div class="menu-float">
+                <div class="menu-float-header">
+                    <img src="./images/logo.svg" alt="">
+                    <button id="btn-menu-close">
+                        <img src="./images/icon-close.svg" alt="Close">
+                    </button>
+                </div>
+                <div class="menu-float-body">
+                    <ul>
+                        <li>ABOUT</li>
+                        <li>CARRERS</li>
+                        <li>EVENTS</li>
+                        <li>PRODUCTS</li>
+                        <li>SUPPORT</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-width">
+            <div>
+                <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="container-intro">
+                <picture>
+                    <source media="(min-width: 1025px)" srcset="./images/desktop/image-interactive.jpg">
+                    <img src="./images/mobile/image-interactive.jpg" width="400" alt="interactive">
+                </picture>
+                <div>
+                    <h2 class="text-2xl">THE LEADER IN INTERACTIVE VR</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="text-2xl">OUR CREATIONS</h2>
+            <div class="container-creations">
+                <div class="creation creation-1">
+                    <h4>DEEP EARTH</h4>
+                </div>
+                <div class="creation creation-2">
+                    <h4>NIGHT ARCADE</h4>
+                </div>
+                <div class="creation creation-3">
+                    <h4>SOCCER TEAM VR</h4>
+                </div>
+                <div class="creation creation-4">
+                    <h4>THE GRID</h4>
+                </div>
+                <div class="creation creation-5">
+                    <h4>FROM UP OBOVE VR</h4>
+                </div>
+                <div class="creation creation-6">
+                    <h4>POCKET BOREALIS</h4>
+                </div>
+                <div class="creation creation-7">
+                    <h4>THE CURIOSITY</h4>
+                </div>
+                <div class="creation creation-8">
+                    <h4>MAKE IT FISHEYE</h4>
+                </div>
+            </div>
+            <div class="container-button">
+                <button type="submit">SEE ALL</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <nav class="menu-footer">
+                <div>
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+                <div>
+                    <ul class="menu-footer-list">
+                        <li>About</li>
+                        <li>Corrers</li>
+                        <li>Events</li>
+                        <li>Products</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-social-media">
+            <a href="http://">
+                <img src="./images/icon-facebook.svg" alt="Facebook">
+            </a>
+            <a href="http://">
+                <img src="./images/icon-twitter.svg" alt="Twitter">
+            </a>
+            <a href="http://">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest">
+            </a>menu-burger
+            <a href="http://">
+                <img src="./images/icon-instagram.svg" alt="Instagram">
+            </a>
+        </div>
+        <div class="footer-text">
+            <p>© 2025 Loopstudios. All right reserved</p>
+        </div>
+    </footer>
+    <script>
+        // Abrir el menu
+        document.querySelector("#btn-menu-burger").addEventListener("click", function () {
+            document.querySelector(".menu-float").style.display = "flex";
+            document.body.style.overflow = "hidden";
+        })
+
+        // Cerrar el menu
+        document.querySelector("#btn-menu-close").addEventListener("click", function () {
+            document.querySelector(".menu-float").style.display = "none";
+            document.body.style.overflow = "auto"
+        })
+    </script>
+</body>
+</html>
