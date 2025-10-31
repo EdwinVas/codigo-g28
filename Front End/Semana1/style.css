@@ -136,6 +136,7 @@ en base a una medida */
   /* Desktops estándar */
     .menu {
         flex-direction: row;
+        /*Separa el contenido de extremo a extremo*/
         justify-content: space-between;
         padding: 60px;
     }
