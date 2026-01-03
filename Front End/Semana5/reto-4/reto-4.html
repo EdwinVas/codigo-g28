@@ -18,48 +18,65 @@
 <!--    100vh -> h-screen-->
 <!--    p-5 = padding 20px-->
 <!--    numero*4-->
-    <main class="h-dvh bg-[#f9ece1] p-5 flex flex-col justify-center gap-5">
-        <section class="flex items-center bg-reto4 p-5 text-white justify-between rounded-xl">
-<!--            espacio en eje y-->
-            <div class="space-y-2">
-                <h5>My balance</h5>
-                <p class="text-2xl font-bold">$921.48</p>
-            </div>
-            <img src="./images/logo.svg" alt="logo">
-        </section>
-        <section class="bg-white rounded-xl p-5">
-            <h5 class="text-xl font-semibold">Spending - Last 7 days</h5>
-            <div class="flex justify-between items-end">
-                <div class="space-y-1">
-                    <div class="bg-reto4 h-10 w-8 rounded"></div>
-                    <span class="chart-text">Mon</span>
+    <main class="h-dvh bg-[#f9ece1] p-5 flex flex-col justify-center">
+        <div class="flex flex-col gap-5 w-sm lg:w-md mx-auto">
+            <section class="flex items-center bg-reto4 p-5 text-white justify-between rounded-xl">
+    <!--            espacio en eje y-->
+                <div class="space-y-2">
+                    <h5>My balance</h5>
+                    <p class="text-2xl font-bold">$921.48</p>
                 </div>
-                <div class="space-y-1">
-                    <div class="bg-reto4 h-20 w-8 rounded"></div>
-                    <span class="chart-text">Tue</span>
+                <img src="./images/logo.svg" alt="logo">
+            </section>
+            <section class="bg-white rounded-xl p-5 space-y-10">
+                <h5 class="text-xl font-semibold">Spending - Last 7 days</h5>
+                <div class="flex justify-between items-end">
+                    <div class="space-y-1 group transition delay-150 cursor-pointer duration-300 ease-in-out flex flex-col items-center">
+                        <div class="text-xs bg-orange-950 text-white p-1.5 rounded-md hidden group-hover:block">
+                            $54.5
+                        </div>
+                        <div class="bg-reto4 h-10 w-8 rounded"></div>
+                        <span class="chart-text">Mon</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="bg-reto4 h-20 w-8 rounded"></div>
+                        <span class="chart-text">Tue</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="bg-blue4 h-40 w-8 rounded"></div>
+                        <span class="chart-text">Wed</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="bg-reto4 h-16 w-8 rounded"></div>
+                        <span class="chart-text">Thu</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="bg-reto4 h-12 w-8 rounded"></div>
+                        <span class="chart-text">Fri</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="bg-reto4 h-24 w-8 rounded"></div>
+                        <span class="chart-text">Sat</span>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="bg-reto4 h-12 w-8 rounded"></div>
+                        <span class="chart-text">Sun</span>
+                    </div>
                 </div>
-                <div class="space-y-1">
-                    <div class="bg-blue4 h-40 w-8 rounded"></div>
-                    <span class="chart-text">Wed</span>
+                <!-- Divider -->
+                <div class="h-[2px] bg-gray-200 rounded"></div>
+                    <div class="flex justify-between items-end">
+                        <div class="space-y-1">
+                            <p class="text-sm text-gray-400">Total this month</p>
+                            <h3 class="text-3xl font-semibold">$ 478.33</h3>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-right text-sm font-semibold">+2.4%</p>
+                            <p class="text-sm text-gray-400">from last month</p>
+                        </div>
                 </div>
-                <div class="space-y-1">
-                    <div class="bg-reto4 h-16 w-8 rounded"></div>
-                    <span class="chart-text">Thu</span>
-                </div>
-                <div class="space-y-1">
-                    <div class="bg-reto4 h-12 w-8 rounded"></div>
-                    <span class="chart-text">Fri</span>
-                </div>
-                <div class="space-y-1">
-                    <div class="bg-reto4 h-24 w-8 rounded"></div>
-                    <span class="chart-text">Sat</span>
-                </div>
-                <div class="space-y-1">
-                    <div class="bg-reto4 h-12 w-8 rounded"></div>
-                    <span class="chart-text">Sun</span>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 </body>
 </html>

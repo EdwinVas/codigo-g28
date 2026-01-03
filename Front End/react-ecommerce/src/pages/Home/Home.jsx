@@ -1,0 +1,35 @@
+import { useEffect, useState } from "react";
+import { getProducts } from "@/services/api";
+import Products from "@/components/products";
+import AppContent from "@/components/app-content";
+import { toast } from "sonner";
+
+function Home() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const handleGetProducts = async () => {
+            const { ok, message, data } = await getProducts();
+
+            if (!ok) {
+                toast.error(message);
+                return;
+            }
+
+            setProducts(data);
+        };
+        handleGetProducts();
+    }, []);
+
+    return (
+        <div>
+            <AppContent>
+                {/* Children */}
+                <h1 className="text-2xl">Productos</h1>
+                <Products products={products} />
+            </AppContent>
+        </div>
+    );
+}
+
+export default Home;
